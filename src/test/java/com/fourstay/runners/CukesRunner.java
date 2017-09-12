@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class) //This is important TOO
 @CucumberOptions(
-		plugin="html:target/cucumber-reports",
+		plugin={"html:target/cucumber-reports","json:target/cucumber.json"},
 		features="src/test/resources/features",
 		glue ="com/fourstay/step_definitions",
 		tags ="@Staytest3",
